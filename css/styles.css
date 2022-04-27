@@ -30,18 +30,18 @@ body {
 }
 
 /* ================= HEADER ================= */
-.logo {
+.logo-accent {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #000000;
+  color: var(--accent-color);
 }
 
-.logo-accent {
-  color: var(--accent-color);
+.logo {
+  color: #000000;
 }
 
 .menu-link {
@@ -55,6 +55,10 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
+}
+
+.current{
+color: var(--accent-color);
 }
 
 .contact-info {
@@ -73,6 +77,10 @@ body {
 }
 
 /* ================= HERO ================= */
+.hero{
+  background: #2F303A;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -81,8 +89,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #000; /*-- color: #ffffff --*/
+  color: #ffffff;
 }
+
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
@@ -91,12 +100,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: #ffffff;
+background-color: var(--accent-color);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--accent-color);
+  background: #188CE8;
 }
 /* ================= FEATURES ================= */
 .features-title {
@@ -142,6 +153,15 @@ body {
 }
 
 /* ================= FOOTER ================= */
+.footer{
+  background: #2F303A;
+  color: #ffffff;
+}
+
+.footer .logo{
+  color: #ffffff;
+}
+
 .address-text {
   font-style: normal;
   font-weight: 400;
@@ -149,7 +169,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #000; /*-- color: #ffffff --*/
+  color: #ffffff;
 }
 
 .address-link {
@@ -159,7 +179,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #000; /*-- rgba(255, 255, 255, 0.6) --*/
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ================= PORTFOLIO ================= */
@@ -180,6 +200,11 @@ body {
   background-color: var(--accent-color);
   color: #fff;
 }
+
+.active {
+  background-color: var(--accent-color);
+  color: #fff;
+} 
 
 .project-title {
   font-weight: 700;
